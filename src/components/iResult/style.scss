@@ -1,0 +1,33 @@
+@import "../../styles/common/theme";
+
+.i-result-icon {
+  margin-bottom: $gutter;
+  text-align: center;
+}
+
+.i-result-title {
+  font-size: $gutter;
+  line-height: 1.8;
+  font-weight: normal;
+  text-align: center;
+}
+
+.i-result-description {
+  color: rgba(0, 0, 0, .54);
+  line-height: 1.6;
+  text-align: center;
+  font-weight: normal;
+}
+
+.i-result-content {
+  margin-top: $gutter;
+}
+
+.i-result-action {
+  text-align: center;
+  margin-top: $gutter;
+
+  button, a {
+    margin: 0 8px;
+  }
+}

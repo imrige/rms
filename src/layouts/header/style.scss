@@ -1,0 +1,48 @@
+@import "../../styles/common/theme";
+
+.ant-layout-header {
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+  z-index: 3;
+  width: 100%;
+
+  .ant-layout-header-wrapper {
+    position: relative;
+    height: $header-height;
+    padding: 0 $gutter;
+    transition: all .2s;
+    margin: auto;
+
+    .ant-layout-header-trigger {
+      font-size: 20px;
+      transition: all .3s linear;
+      cursor: pointer;
+    }
+
+    .ant-layout-header-actions {
+      float: right;
+      height: 100%;
+      overflow: hidden;
+      margin-left: auto;
+
+      .ant-layout-header-action {
+        display: inline-block;
+        height: 100%;
+        cursor: pointer;
+        transition: all .2s;
+        padding: 0 12px;
+
+        i {
+          font-size: 16px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  .ant-layout-menu {
+    flex: 1 1 auto;
+    height: $header-height;
+    line-height: $header-height;
+  }
+}

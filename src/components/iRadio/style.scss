@@ -1,0 +1,42 @@
+.i-radio-group {
+  font-size: 0;
+
+  .i-radio {
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    float: left;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    text-align: center;
+
+    .i-radio-img {
+      width: 48px;
+      height: 48px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .i-radio-panel {
+      height: 20px;
+      width: 20px;
+    }
+
+    .i-radio-icon {
+      position: absolute;
+      font-size: 0;
+
+      i {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .i-radio-group-clear {
+    clear: both;
+  }
+}

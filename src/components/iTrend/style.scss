@@ -1,0 +1,14 @@
+.i-trend-item {
+  display: inline-flex;
+  margin-right: 16px;
+  align-items: center;
+  justify-content: flex-start;
+
+  .i-trend-item-title {
+    margin-right: 8px;
+  }
+
+  .i-trend-item-value {
+    margin-right: 4px;
+  }
+}

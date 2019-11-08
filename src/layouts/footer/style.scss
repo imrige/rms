@@ -1,0 +1,11 @@
+@import "../../styles/common/theme";
+
+.ant-layout-footer {
+  padding: 0;
+
+  .ant-layout-footer-wrapper {
+    padding: $gutter;
+    margin: auto;
+    text-align: center;
+  }
+}

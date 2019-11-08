@@ -1,0 +1,7 @@
+@import "../../styles/common/theme";
+
+.i-toolbar {
+  padding: $gutter / 3 * 2 $gutter;
+  background: $light;
+  border: 1px solid $border-color;
+}

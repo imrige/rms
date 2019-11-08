@@ -1,0 +1,8 @@
+@import "../../styles/common/theme";
+
+.ant-layout-content{
+  .ant-layout-content-wrapper{
+    padding: $gutter;
+    margin: auto;
+  }
+}

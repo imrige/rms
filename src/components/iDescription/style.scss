@@ -1,0 +1,76 @@
+@import "../../styles/common/theme";
+
+.i-description {
+  table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+}
+
+.i-description-view {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.i-description-title {
+  margin-bottom: 16px;
+  color: $black;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.i-description-item {
+  display: inline-flex !important;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-bottom: 16px;
+  line-height: 24px;
+
+  > span {
+    display: inline-block;
+  }
+
+  .i-description-item-label {
+    //color: $content-color;
+    font-weight: normal;
+    white-space: nowrap;
+    min-width: 80px;
+
+    &:after {
+      position: relative;
+      margin: 0 8px 0 0;
+      content: ':'
+    }
+  }
+
+  .i-description-item-content {
+    font-size: 14px;
+    //color: $title-color;
+  }
+}
+
+.i-description-bordered {
+  .i-description-view {
+    border: 1px solid $border-color;
+
+    .i-description-item {
+      padding-bottom: 0;
+      border-bottom: 1px solid $border-color;
+
+      .i-description-item-label {
+        padding: 16px 24px;
+        border-right: 1px solid $border-color;
+
+        &:after {
+          content: none;
+        }
+      }
+
+      .i-description-item-content {
+        padding: 16px 24px;
+      }
+    }
+  }
+}

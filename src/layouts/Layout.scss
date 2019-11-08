@@ -1,0 +1,183 @@
+@import "../styles/common/theme";
+
+//上中下布局
+.ant-layout {
+  > .ant-layout {
+    transition: all .2s;
+    margin-left: 0;
+    width: 100%;
+
+    .ant-layout-header {
+      .ant-layout-header-wrapper {
+        max-width: $max-width;
+        display: flex;
+
+        .ant-layout-brand {
+          min-width: 128px;
+          text-align: left;
+        }
+      }
+    }
+
+    .ant-layout-content .ant-layout-content-wrapper,
+    .ant-layout-footer .ant-layout-footer-wrapper {
+      max-width: $max-width;
+    }
+  }
+}
+
+//侧边栏布局
+.ant-layout-has-sider {
+
+  > .ant-layout {
+    .ant-layout-header {
+      background: $light;
+      box-shadow: 0 1px 4px rgba(0, 21, 41, .08);
+
+      .ant-layout-header-wrapper {
+        display: block;
+        max-width: 100%;
+
+        .ant-layout-header-trigger {
+          flex: 0 0 auto;
+        }
+      }
+    }
+
+    .ant-layout-content .ant-layout-content-wrapper,
+    .ant-layout-footer .ant-layout-footer-wrapper {
+      max-width: 100%;
+    }
+  }
+
+  > .ant-layout-sider {
+    .ant-layout-brand {
+      text-align: center;
+    }
+
+    .ant-layout-menu {
+      padding: 12px 0;
+    }
+  }
+}
+
+//暗色主题
+.ant-layout-dark {
+  .ant-layout-header {
+    color: $white;
+  }
+
+  .ant-layout-header-action:hover {
+    background: $primary;
+    color: $light;
+  }
+
+  &.ant-layout-has-sider {
+    .ant-layout-sider {
+      box-shadow: 2px 0 6px rgba(0, 21, 41, .35);
+    }
+
+    .ant-layout-header {
+      color: $black;
+    }
+
+    .ant-layout-header-action:hover {
+      background: rgba(0, 0, 0, .05);
+      color: $black;
+    }
+  }
+}
+
+//亮色主题
+.ant-layout-light {
+  .ant-layout-header {
+    background: $light;
+    color: $black;
+
+    .ant-layout-brand {
+      h1 {
+        color: $black;
+      }
+    }
+
+    .ant-layout-header-action:hover {
+      background: rgba(0, 0, 0, .05);
+    }
+  }
+
+  .ant-layout-sider {
+    .ant-layout-brand {
+
+      h1 {
+        color: $black;
+      }
+    }
+  }
+
+  &.ant-layout-has-sider {
+    .ant-layout-sider {
+      box-shadow: 2px 0 8px 0 rgba(29, 35, 41, .05);
+
+      .ant-layout-brand {
+        box-shadow: 1px 1px 0 0 $border-color;
+      }
+    }
+  }
+}
+
+//固定侧边栏
+.ant-layout-fixed-sidebar {
+  .ant-layout-sider {
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    overflow: auto;
+  }
+
+  > .ant-layout {
+    margin-left: $sidebar-width;
+  }
+}
+
+.ant-layout-fixed-sidebar.ant-layout-sidebar-collapsed {
+  > .ant-layout {
+    margin-left: $sidebar-collapsed-width;
+  }
+}
+
+//固定导航栏
+.ant-layout-fixed-header {
+  > .ant-layout {
+    .ant-layout-header {
+      position: fixed;
+      //width: calc(100% - 256px) !important;
+    }
+  }
+
+  .ant-layout-content {
+    margin-top: $header-height;
+  }
+}
+
+//固定侧边栏和固定导航栏
+.ant-layout-fixed-header {
+  > .ant-layout .ant-layout-header {
+    width: 100%;
+  }
+}
+
+.ant-layout-fixed-header.ant-layout-fixed-sidebar {
+  > .ant-layout {
+    .ant-layout-header {
+      width: calc(100% - 256px);
+    }
+  }
+}
+
+.ant-layout-fixed-header.ant-layout-sidebar-collapsed {
+  > .ant-layout {
+    .ant-layout-header {
+      width: calc(100% - 80px);
+    }
+  }
+}

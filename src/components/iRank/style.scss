@@ -1,0 +1,43 @@
+.i-rank {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.i-rank-item {
+  display: flex;
+  margin-top: 16px;
+  align-items: center;
+  line-height: 22px;
+
+  .i-rank-item-index,
+  .i-rank-item-value {
+    flex: 0 0 auto;
+  }
+
+  .i-rank-item-index {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    background: #f4f4f4;
+    margin-right: 16px;
+    font-size: 12px;
+
+    &.i-rank-item-index-active {
+      background: #314659;
+      color: #ffffff;
+    }
+  }
+
+  .i-rank-item-title {
+    flex: 1 1 auto;
+    margin-right: 8px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
