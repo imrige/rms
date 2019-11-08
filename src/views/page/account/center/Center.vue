@@ -2,25 +2,23 @@
     <PageView>
         <a-row :gutter="gutter">
             <a-col :span="8">
-                <a-affix :offsetTop="88">
-                    <a-card :bordered="false">
-                        <div class="text-center">
-                            <a-avatar :src="user.avatar" :size="96" class="mb-3"/>
-                            <h2>{{user.nickname}}</h2>
-                        </div>
+                <a-card :bordered="false">
+                    <div class="text-center">
+                        <a-avatar :src="user.avatar" :size="96" class="mb-3"/>
+                        <h2>{{user.nickname}}</h2>
+                    </div>
 
-                        <a-list>
-                            <a-list-item>
-                                <a-list-item-meta title="上次登录"/>
-                                <span>{{user.time}}</span>
-                            </a-list-item>
-                            <a-list-item>
-                                <a-list-item-meta title="身份角色"/>
-                                <span>{{user.role}}</span>
-                            </a-list-item>
-                        </a-list>
-                    </a-card>
-                </a-affix>
+                    <a-list>
+                        <a-list-item>
+                            <a-list-item-meta title="上次登录"/>
+                            <span>{{user.time}}</span>
+                        </a-list-item>
+                        <a-list-item>
+                            <a-list-item-meta title="身份角色"/>
+                            <span>{{user.role}}</span>
+                        </a-list-item>
+                    </a-list>
+                </a-card>
             </a-col>
             <a-col :span="16">
                 <a-card :bordered="false" :tabList="tabList" :activeTabKey="activeTabKey" @tabChange="bindClickTab">

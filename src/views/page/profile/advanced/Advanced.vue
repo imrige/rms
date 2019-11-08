@@ -22,17 +22,17 @@
                             </a-col>
                             <a-col :span="span">
                                 <a-form-item label="身份证">
-                                    <span>3321944288191034921</span>
+                                    <span>00000000000000</span>
                                 </a-form-item>
                             </a-col>
                             <a-col :span="span">
                                 <a-form-item label="会员卡号">
-                                    <span>32943898021309809423</span>
+                                    <span>00000000000000</span>
                                 </a-form-item>
                             </a-col>
                             <a-col :span="span">
                                 <a-form-item label="联系方式">
-                                    <span>18112345678</span>
+                                    <span>11112345678</span>
                                 </a-form-item>
                             </a-col>
                             <a-col :span="span * 2">
@@ -54,7 +54,7 @@
                                     </a-col>
                                     <a-col :span="span">
                                         <a-form-item label="卡号">
-                                            <span>3298738920927989</span>
+                                            <span>00000000000000</span>
                                         </a-form-item>
                                     </a-col>
                                     <a-col :span="span">

@@ -1,8 +1,9 @@
 {
-  "name": "rms_vue",
+  "name": "rms",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "deploy": "bash deploy.sh",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "add:component": "node scripts/add.component.js",
