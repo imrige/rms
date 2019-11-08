@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0d3de7"],{"5f33":function(t,e,n){"use strict";n.r(e);var a=function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("a-table",{attrs:{columns:t.columns}})},l=[],d=[{title:"操作名称",dataIndex:"name"},{title:"方法",dataIndex:"method"},{title:"路径",dataIndex:"path"},{title:"耗时",dataIndex:"time",align:"right"}],u={name:"Logs",data:function(){return{columns:d}}},i=u,c=n("4e82"),o=Object(c["a"])(i,a,l,!1,null,null,null);e["default"]=o.exports}}]);
+//# sourceMappingURL=chunk-2d0d3de7.230c3513.js.map
